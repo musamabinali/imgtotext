@@ -1,0 +1,151 @@
+
+#drop-area {
+    background: #fff;
+    color: #ccc;
+    border: 2px dashed #ccc;
+    button,img{
+        cursor: pointer;
+    }
+}
+
+#drop-area.hover {
+    color: #333;
+    border-color: #666;
+}
+.dropdown-menu {
+    animation: 0.5s slideup;
+}
+.d-grid {
+    display: grid;
+}
+.ml-auto {
+    margin-left: auto;
+}
+@keyframes slideup {
+    from {
+        transform: translateY(10%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+.img-preview {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+#remove-all-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#remove-all-btn:hover {
+    background-color: #e60000;
+}
+#uploadedfiles {
+    padding: 0;
+}
+#uploadedfiles li {
+    margin: 12px 0;
+    border: 1px solid #00000038;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        padding: 4px 8px;
+        background-color: #198754ad;
+        color: #fff;
+        border-radius: 4px;
+    }
+    p {
+        width: 215px;
+        margin: 0;
+    }
+}
+.buttons-csv {
+    background-color: #4d5fff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.buttons-csv:hover {
+    background-color: #4d5fff5d;
+    color: white;
+}
+button.dt-button,
+div.dt-button,
+a.dt-button {
+    display: none;
+}
+.progress {
+    background: #0000001a;
+}
+.crop-img:hover,
+.remove-btn:hover {
+    transform: scale(1.2);
+}
+.extxt {
+    width: 100% !important;
+}
+#results-table tbody tr {
+    box-shadow: 0 -1px 0px 0px #00000030;
+    position: relative;
+}
+#results-table tbody tr td:nth-child(2) {
+    height: 150px;
+    max-height: 150px;
+    overflow-y: auto;
+    display: block;
+    margin: 10px 0 36px;
+    border-bottom: 1px solid #0000002e;
+}
+.cd {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 4px;
+    right: 24px;
+}
+.cd span,
+.cd button {
+    background: #fff;
+    border: 0;
+    border-radius: 4px;
+    display: flex;
+    padding: 4px;
+    font-size: 13px;
+}
+.cd button:hover {
+    background: #d1d1d1;
+}
+.btn-all {
+    display: flex;
+    gap: 10px;
+    margin-top: 32px;
+    justify-content: flex-end;
+}
+.btn-primary{
+    background-color: #7191F4 !important;
+}
+.btn-primary:hover{
+    background-color: #93ABF7 !important;
+}
+button.dt-button {
+    display: none !important;
+}
+#progress-bar{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}

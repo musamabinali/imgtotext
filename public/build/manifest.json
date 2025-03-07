@@ -1,0 +1,37 @@
+{
+  "__vite-browser-external": {
+    "file": "assets/__vite-browser-external-b25bb000.js",
+    "isDynamicEntry": true,
+    "src": "__vite-browser-external"
+  },
+  "node_modules/path2d/dist/index.js": {
+    "file": "assets/index-60f13653.js",
+    "isDynamicEntry": true,
+    "src": "node_modules/path2d/dist/index.js"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-4c73daad.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-411a0afc.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-411a0afc.css"
+    ],
+    "dynamicImports": [
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "node_modules/path2d/dist/index.js"
+    ],
+    "file": "assets/app-877d89ff.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
