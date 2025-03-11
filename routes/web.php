@@ -20,7 +20,8 @@ use Illuminate\Support\Facades\Http;
 |
 */
 
-Route::get('/',function () { return view('welcome');})->name('welcome');
+Route::get('/',function (){return view('tools/image-to-text');})->name('image-to-text');
+//Route::get('/',function () { return view('welcome');})->name('welcome');
 
 Route::get('/pdf-to-text',function (){return view('tools/pdf-to-text');})->name('pdf-to-text');
 Route::get('/pdf-to-word',function (){return view('tools/pdf-to-word');})->name('pdf-to-word');

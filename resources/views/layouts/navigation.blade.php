@@ -2,17 +2,17 @@
     <div class="container mx-auto flex justify-between items-center p-4">
         <!-- Logo -->
         <div class="col-span-1 content-center justify-start hidden lg:flex flex">
-            <a href="{{ route('welcome')}}" class="content-center justify-center flex">
+            <a href="{{ route('image-to-text')}}" class="content-center justify-center flex">
                 <x-application-logo class="block h-8 w-auto fill-current text-gray-800 dark:text-gray-200"/>
             </a>
         </div>
         <div class="col-span-2 flex lg:hidden">
-            <a href="{{route('welcome')}}" class="content-center justify-center flex">
+            <a href="{{route('image-to-text')}}" class="content-center justify-center flex">
                 <x-application-logo class="block h-6 w-auto fill-current text-gray-800 dark:text-gray-200"/>
             </a>
         </div>
         <div class="col-span-1 content-center justify-end flex lg:hidden ">
-            @if(Route::is('welcome'))
+            @if(Route::is('image-to-text'))
                 <div class="dropdown inline-block relative">
                     <button class="bg-transparent hover:bg-white-400 text-red-500 border-2 border-red-500 font-bold py-2 px-3 rounded inline-flex items-center transition-all duration-300" id="dropdown-button-mobile">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 mx-1 w-4 md:h-5 md:w-5" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 5h7"></path><path d="M9 3v2c0 4.418 -2.239 8 -5 8"></path><path d="M5 9c0 2.144 2.952 3.908 6.7 4"></path><path d="M12 20l4 -9l4 9"></path><path d="M19.1 18h-6.2"></path></svg>
@@ -26,7 +26,7 @@
                                 </li>
                             @else
                                 <li class="">
-                                    <a href="{{LaravelLocalization::getURLFromRouteNameTranslated($localeCode,'routes.welcome')}}" class="block px-3 py-2 hover:bg-blue-500 hover:text-white">{{ $properties['native'] }}</a>
+                                    <a href="{{LaravelLocalization::getURLFromRouteNameTranslated($localeCode,'routes.image-to-text')}}" class="block px-3 py-2 hover:bg-blue-500 hover:text-white">{{ $properties['native'] }}</a>
                                 </li>
                             @endif
                         @endforeach
@@ -44,7 +44,7 @@
         </div>
         <!-- Navigation Links -->
         <div id="navbar" class="hidden lg:flex lg:items-center lg:space-x-8">
-            <x-nav-link :href="route('welcome')" :active="request()->routeIs('welcome')" class="hover:text-orange-600">
+            <x-nav-link :href="route('image-to-text')" :active="request()->routeIs('image-to-text')" class="hover:text-orange-600">
                 {{ __('_.home') }}
             </x-nav-link>
             <x-nav-link :href="route('blog')" :active="request()->routeIs('blog')">
@@ -139,7 +139,7 @@
     </div>
     <!-- Responsive Menu -->
     <div id="responsiveMenu" class="lg:hidden hidden bg-white py-2">
-        <x-nav-link :href="route('welcome')" :active="request()->routeIs('welcome')" class="block px-4 py-2 hover:text-orange-600">
+        <x-nav-link :href="route('image-to-text')" :active="request()->routeIs('image-to-text')" class="block px-4 py-2 hover:text-orange-600">
             {{ __('_.home') }}
         </x-nav-link>
         <x-nav-link :href="route('blog')" :active="request()->routeIs('blog')" class="block px-4 py-2 hover:text-orange-600">
@@ -157,7 +157,7 @@
             <nav class="navigation flex items-center justify-center flex-wrap" role="navigation">
                 <div class="w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
                     <ul class="nav-list block lg:flex px-4 md:flex  justify-end">
-                        <li class="border-b-default border-gray-500 py-2 pr-12 nav-item text-lg md:px-6 hover:font-bold hover:text-blue-100 {{Route::is('welcome')?'font-bold':''}}"><a href="{{route('welcome')}}">{{__('_.home')  }}</a></li>
+                        <li class="border-b-default border-gray-500 py-2 pr-12 nav-item text-lg md:px-6 hover:font-bold hover:text-blue-100 {{Route::is('image-to-text')?'font-bold':''}}"><a href="{{route('image-to-text')}}">{{__('_.home')  }}</a></li>
                         <li class="border-b-default border-gray-500 py-2 pr-12 nav-item text-lg md:px-6 hover:font-bold hover:text-blue-100 {{Route::is('blog')?'font-bold':''}}"><a href="{{route('blog')}}">Blog</a></li>
                         <li class="py-2 pr-12 nav-item text-lg md:px-6 hover:font-bold hover:text-blue-100 {{Route::is('contact')?'font-bold':''}}"><a href="{{route('contact')}}">Contact</a></li>
 
