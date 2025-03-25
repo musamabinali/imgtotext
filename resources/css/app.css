@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    /* Desktop hover dropdowns */
+    .desktop-navbar .dropdown:hover .dropdown-menu {
+        @apply block;
+    }
+
+    /* Mobile click dropdowns */
+    .mobile-dropdown.active .dropdown-menu {
+        @apply block;
+    }
+}

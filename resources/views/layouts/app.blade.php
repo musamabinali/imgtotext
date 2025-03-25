@@ -20,6 +20,7 @@
     @vite([
     'resources/css/app.css',
     'resources/js/app.js'])
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 {{-- font-sans antialiased --}}
 
@@ -158,6 +159,44 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Mobile sidebar toggle
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+        const sidebarToggle = document.getElementById("sidebarToggle");
+        const closeSidebar = document.getElementById("closeSidebar");
+
+        // Mobile dropdown toggle
+        const servicesDropdownMobile = document.getElementById("servicesDropdownMobile");
+        const mobileDropdownMenu = document.getElementById("mobileDropdownMenu");
+
+        // Mobile sidebar toggle
+        sidebarToggle.addEventListener("click", () => {
+            sidebar.classList.remove("left-[-250px]");
+            sidebar.classList.add("left-0");
+            overlay.classList.remove("hidden");
+        });
+
+        // Close sidebar
+        closeSidebar.addEventListener("click", closeSidebarMenu);
+        overlay.addEventListener("click", closeSidebarMenu);
+
+        // Mobile dropdown click
+        servicesDropdownMobile.addEventListener("click", (e) => {
+            e.preventDefault();
+            const parent = e.target.closest('.mobile-dropdown') || e.target.parentElement.closest('.mobile-dropdown');
+            parent.classList.toggle("active");
+        });
+
+        function closeSidebarMenu() {
+            sidebar.classList.remove("left-0");
+            sidebar.classList.add("left-[-250px]");
+            overlay.classList.add("hidden");
+        }
+    });
+</script>
 </body>
 
 </html>

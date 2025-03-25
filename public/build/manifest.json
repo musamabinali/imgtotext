@@ -10,17 +10,17 @@
     "src": "node_modules/path2d/dist/index.js"
   },
   "resources/css/app.css": {
-    "file": "assets/app-4c73daad.css",
+    "file": "assets/app-2c4d03d0.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-411a0afc.css",
+    "file": "assets/app-32001d87.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-411a0afc.css"
+      "assets/app-32001d87.css"
     ],
     "dynamicImports": [
       "__vite-browser-external",
@@ -30,7 +30,7 @@
       "__vite-browser-external",
       "node_modules/path2d/dist/index.js"
     ],
-    "file": "assets/app-877d89ff.js",
+    "file": "assets/app-a249a158.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
